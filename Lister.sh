@@ -37,11 +37,6 @@ if [ -z "$PS1" ]; then
          echo This shell is interactive
 fi
 
-# strip out on cleanup:
-# WTF="This";
-# FTW="That";
-# Really=(${WTF}${FTW});
-# echo "$Really";
 
 MY_PROMPT='#>(LH=Help)#> '
 
