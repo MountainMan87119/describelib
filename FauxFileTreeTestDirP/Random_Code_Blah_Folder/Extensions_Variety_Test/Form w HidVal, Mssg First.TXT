@@ -1,0 +1,14 @@
+Sunday, 13 February, 2011
+
+I had this below snippet, then lost it.  I enjoyed it so much I wasted over 2wo hours, figuring it out again.
+
+Well, not totally wasted, that time, learned a few things as I stumbled around.
+
+
+<input type="hidden" id="HideItWell" onclick="hideSeek()" value=7 />
+<form action="Those2.php" method="post";>
+Read Message, Then Adventure Off!!!
+<button type="submit" onclick="hideSeek()" value=$YY >Whoa!</button><?php echo "$YY"; ?>
+</form>
+
+6:12 PM 13/02/2011

@@ -1,0 +1,14 @@
+/*
+1.  Date/Time/Place: 
+*/
+
+#NewBttnDIV{
+position:absolute;
+top:39px;
+left:9px;
+width:56px;
+height:30px;
+background-color:#333333;
+border:1px solid red;
+z-index:115px;
+}
