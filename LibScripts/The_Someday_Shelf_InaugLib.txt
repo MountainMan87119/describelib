@@ -22,6 +22,22 @@ FEATURE
 pushd
 popd
 
+*********************************
+
+Wed. 30 April '14.
+
+FEATURE
+A List Maintained of Files Created
+
+FEATURE
+Delete Files From Within the Library SubShell ::
+A.
+Delete ALL
+B.
+Delete One~By~One Via Prompt
+
+C.
+Build small display:  View  Head or Tail
 
 
 
