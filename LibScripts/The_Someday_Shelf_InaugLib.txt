@@ -40,6 +40,11 @@ C.
 Build small display:  View  Head or Tail
 
 
+Fri. 2 May '14.
+
+Feature
+List by Date (created , last modified) : Human Readable format : 9 or P :
+:range from to
 
 
 
