@@ -1,34 +1,103 @@
-FileNAME :: "READ[_InaugLib_]ME"
+FileNAME :: "README"
 ~ April 2014.
+Edited : Dec. 2016.
+
+
+Contents
+
+TL;DR | install/setup | commandline
+A Description of the Library
+More Notes on Installation, and Uninstallation
+
+*************************************************
+*************************************************
+*************************************************
+
 
 
 
 *************************************
-TL;DR | install/setup | commandline prompt while in "INAUG_LIB  ie.:  [        userMachine INAUG_LIB # ./setupInaug.sh              ]
+TL;DR | install/setup | commandline
 *************************************
 
-     The "INAUG_LIB" package needs to be under a location called 'home' or else the setup file, "setupInaug.sh" will need to
-be edited by hand to reflect your filetree or your desire to locate the library differently.
+Given a prompt as for example : MyLaptop-User-Tony home #
 
-     The library can be used to do work anywhere you want to cd to and it manages... but for installation purposes the
-"setupInaug.sh" should be run from within "INAUG_LIB" the first time.
+1.
+MyLaptop-User-Tony home # mkdir INAUG_LIB
+2.
+MyLaptop-User-Tony home # chown -R apache:WebGroup /home/INAUG_LIB/
+3.
+MyLaptop-User-Tony home # chmod -R 774 /home/INAUG_LIB/
+4.
+MyLaptop-User-Tony home # mv /home/Downloads/describelib-master.zip /home/INAUG_LIB/
+5.
+MyLaptop-User-Tony home # cd INAUG_LIB
+6.
+MyLaptop-User-Tony INAUG_LIB # unzip describelib-master.zip
+7.
+MyLaptop-User-Tony INAUG_LIB # ./setupInaug.sh
 
-     When installing, a record is made so you can look under the hood.  During setup, some library files are shunted to
-library subdirectories of "INAUG_LIB." and the library gets confirmation of what is extracted successfully and where things
-are.  In the file made, "InstallationRecord.txt" found at ../../INAUG_LIB/InstallRecord_UninstallScript, you can see
-instructions for Uninstall/Deletion.
+It takes about a minute to install.
+
+
+
+
+*************************************
+A Description of the Library
+*************************************
+
+    Inaugural Library is a small collection of BASH shell scripts, each of which creates
+a list of a given format~type, of the contents of a Directory ~ and writes the list made
+to file.
+
+    There is a script which is run from the command line; an interactive subshell is
+provided from which 48 small shell scripts can be invoked by entering a simple 4 or 5
+character code.
+
+    Some of the scripts provide screen output, others do not, but they all write the list
+they make, to a file which can be used for input or work, saved for review or discarded,
+as the user wishes.
+
+    Basically, the library makes 12 different kinds of lists, with or without screen
+output (12x2=24) and does that starting with *find* or *ls*; (24x2=48). The handy thing
+is simply the ease of only entering 4 or 5 characters each of which represents some aspect
+of the behaviour the user wants; after a little time getting familiar with the library,
+it becomes easy to use.
+
+
+
+
+*************************************************
+More Notes on Installation, and Uninstallation
+*************************************************
+
+     The "INAUG_LIB" package needs to be under a location called 'home' or else the setup
+file, "setupInaug.sh" will need to be edited by hand to reflect your filetree or your
+desire to locate the library differently.
+
+     The library can be used to do work anywhere you want to cd to and it manages... but
+for installation purposes the "setupInaug.sh" should be run from within "INAUG_LIB" the
+first time.
+
+     When installing, a record is made so you can look under the hood.  During setup,
+some library files are shunted to library subdirectories of "INAUG_LIB." and the library
+gets confirmation of what is extracted successfully and where things are.  In the file
+made, "InstallationRecord.txt" found at ../../INAUG_LIB/InstallRecord_UninstallScript,
+you can see instructions for Uninstall/Deletion.
 
      The crazy way is to *cd* to the Directory ABOVE "INAUG_LIB" and do :
-     [[[       #   /../path/to/INAUG_LIB/InstallRecored_UnistallScript/ToEraseInaugLib.sh    ]]]
+[[[ # /../path/to/INAUG_LIB/InstallRecored_UnistallScript/ToEraseInaugLib.sh    ]]]
      
-     Easy way is *cd* to Directory ABOVE "INAUG_LIB" and do :  [[[          # rm -rf INAUG_LIB              ]]].
+     Easy way is *cd* to Directory ABOVE "INAUG_LIB" and do :
+[[[ # rm -rf INAUG_LIB								]]].
      
-     AND if you like to experiment, you can also *cd* to where you fine "ToEraseInaugLib.sh" and in that directory,
-     do :
-     [[[       #  ./ToEraseInaugLib.sh            ]]] and it works, but leaves the shell momentarily confused.
+AND if you like to experiment, you can also *cd* to where you fine "ToEraseInaugLib.sh"
+and in that directory, do :
+[[[       #  ./ToEraseInaugLib.sh						]]]
 
-     Nothing is placed in the Registries, by this library.  The other thing it does not have is capability to create a desktop icon.
-Those things may be added in the future, as well as a whole list of things the authour would like to include sometime.
+... and it works, but leaves the shell momentarily confused.  It sorts itself though :)
 
-**************************************
+     Nothing is placed in the Registries, by this library.  The other thing it does not
+have is capability to create a desktop icon.  Those things may be added in the future, as
+well as a whole list of things the authour would like to include sometime.
 
