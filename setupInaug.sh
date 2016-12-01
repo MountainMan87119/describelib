@@ -78,8 +78,8 @@ echo "" | tee -a ${RecordTheSetup};
 # 14(a) Since this script is running, one assumes the user found it in place  ;) so figure *setupInaug.sh* OK:
 let $((CheckListCount=$CheckListCount+1));
 
-# 14(b) for user, README which contains notes on setting up the library.                   ==    READ[_InaugLib_]ME
-CnfrmREADME="READ[_InaugLib_]ME";
+# 14(b) for user, README which contains notes on setting up the library.                   ==    README
+CnfrmREADME="README";
 echo "This is *thing* requested: ${CnfrmREADME}" | tee -a ${RecordTheSetup};
      
      if [ -f ${NewBetter}${CnfrmREADME} ]; then
@@ -309,17 +309,17 @@ if [ "${UninstallYes}" == 1 ] && [ "${InstallEraseYes}" == 1 ]; then
      fi
 fi
 
-# 18.(b) Move READ[_InaugLib_]ME
+# 18.(b) Move README
 if [ "${ReadMeYes}" == 1 ] && [ "${LibScriptsDIRYes}" == 1 ]; then
 
      mv $CnfrmREADME $NewBetter$ToAccessLibScripts$CnfrmREADME;
      
      if [ -f "${NewBetter}${ToAccessLibScripts}${CnfrmREADME}" ]; then
-          echo "Moved file *READ[_InaugLib_]ME* to LibScripts directory." | tee -a ${RecordTheSetup};
+          echo "Moved file *README* to LibScripts directory." | tee -a ${RecordTheSetup};
 	  let $((CheckListCount=$CheckListCount+1));
 	  SuccessMV2=1;
      else
-	  echo "An attempt to move *READ[_InaugLib_]ME* out of PWD did not work." | tee -a ${RecordTheSetup};
+	  echo "An attempt to move *README* out of PWD did not work." | tee -a ${RecordTheSetup};
 	  SuccessMV2=0;
      fi
 fi
